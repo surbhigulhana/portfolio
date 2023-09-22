@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+      width: 100%;
+  }
+}
+/* contact */
+.contact-form {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  background-color: #ff6f5c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #ff6f5c;
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+      margin: 10px;
+  }
+}
+
+.conatctbanner{
+  height: 500px;
+  width: 600px;
+  margin-left: -100px;
+  margin-top: -50px;
+
+}
+.column1{
+  text-align: justify;
+ line-height: 1.7;
+}
+.aboutbg{
+  height: 430px;
+  width: 500px;
+  margin-top: -80px;
+  margin-left: 100px;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+
+
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  height: 150px;
+  flex-basis: 25%;
+  -ms-flex: auto;
+  width: 250px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.grid-row a {
+  text-decoration: none;
+}
+
+.wrapping-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  color: currentColor;
+}
+
+.grid-item-wrapper {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+  background: #aaa;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+  transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+}
+
+.grid-item-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-image-top {
+  height: 45%;
+  width: 120%;
+  background-size: cover;
+  position: relative;
+  background-position: 50% 50%;
+  left: -10.5%;
+  top: -4.5%;
+  display: none;
+}
+
+.grid-image-top .centered {
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 54.5%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  background-position: center;
+}
+
+
+
+
+.grid-item-content {
+  padding: 0 20px 20px 20px;
+}
+
+.item-title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.item-category {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.item-excerpt {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 14px;
+}
+
+.more-info {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  padding-left: 0;
+  transition-duration: .5s;
+  font-size: 12px;
+  display: flex;
+}
+
+.more-info i {
+  padding-left: 5px;
+  transition-duration: .5s;
+}
+
+.grid-item:hover .more-info i {
+  padding-left: 20px;
+  transition-duration: .5s;
+}
+
+.more-info i::before {
+  font-size: 16px;
+}
+
+.grid-item:hover .grid-item-wrapper {
+  padding: 2% 2%;
+  margin: -2% -2%;
+}
+
+
+#r{
+  height: 100px;
+  width: 100px;
+}
+
+#h{
+  height: 100px;
+  width: 160px;
+  margin-left: -30px;
+}
+
+
+.ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  height: 10em;
+}
+
+.ul li {
+  padding: 1em;
+}
+
+
+section {
+  margin-left: 100px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.parent-skill {
+  width: 200px;
+  height: auto;
+}
+
+.skill {
+
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.progress {
+  width: 97%;
+  height: 97%;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  /* background: linear-gradient(280deg, #1e2024, #23272b); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-number {
+  font-family: 'Poppins', sans-serif;
+  color: #ff6f5c;
+  font-size: 2rem;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  color: #ff6f5c;
+  font-size: 1.4rem;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #ff6f5c; /* Change the background color as needed */
+  color: white;
+  /* border: 2px solid black; */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+
+  animation: pulse 2s infinite; /* Add the pulse animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* media */
+
+
+@media (max-width:768px){
+  .aboutbg{
+
+margin-left: 90px;
+margin-top: -820px;
+height: 200px;
+width: 200px;
+
+  } 
+  .grid-row{
+
+    height: 150px;
+  }
+  .grid-item{
+    height: 30px;
+  }
+  #s1{font-size: 10px;}
+  #cc1{
+    margin-top: 100px;
+  }
+  #r{
+    height: 50px;
+    width: 50px;
+  }
+  #h{
+    height: 50px;
+    width: 80px;
+    margin-left: 40px;
+  }
+  .grid-item{
+    padding: 0px;
+  }
+  .skill {
+
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+  #cvb{
+    width: 50%;
+  
+  }
+  .title{
+    font-size: 10px;
+  }
+  .conatctbanner {
+    height: 200px;
+    width: 200px;
+    margin-left: 80px;
+    margin-top: -80px;
+  
+}
+#gs1{
+  margin-top: 100px;
+  width: 300px;
+  margin-left: -180px;
+}
+
+#skill{
+  margin-top: -70px;
+}
+#skills{
+  margin-top: -100px;
+}
+#cvb{
+  margin-left: 75px;
+}
+.parent-skill{width: 90px;
+}
+.card{
+  margin-left: 30px;
+}
+}
